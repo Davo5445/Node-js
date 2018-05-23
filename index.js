@@ -26,12 +26,6 @@ app.delete('/artists/:id' , artistsController.delete);
 
 
 db.connect("students",'mongodb://localhost/students',function (err )	 {
-	if(err){
-		console.log("errow");
-	}
-	
-	app.listen(8080 , function() {
-		console.log("api server run on 8080 port");
-	});
+
 })
 
